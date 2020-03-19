@@ -1,0 +1,70 @@
+@font-face {
+	font-family: main;
+	src: url(../../fonts/Montserrat-Regular.ttf);
+}
+
+.item_catalog{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: auto;
+  width: 300px;
+  height: 480px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 30px;
+  text-align: center;
+  background-color: white;
+  flex: auto;
+  font-family: main;
+  font-size: 15px;
+  letter-spacing: 5px;
+}
+.item_catalog:hover{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+  border: 1px solid black;
+  transform: scale(1.2);
+  position: relative;
+  transition: 0.3s;
+}
+.img_catalog{
+  width: 250px;
+  height: 270px;
+  object-fit: cover;
+  padding-bottom: 10px;
+
+}
+.catalog_container{
+  display: flex;
+  justify-content: center ;
+  height: 100vw;
+  width: auto;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+.order_catalog{
+margin-top: 10px;
+	border-radius: 20px;
+	width: 150px;
+	height: 30px;
+	border: 1px solid black;
+	background-color:  white;
+	font-family: main;
+	  letter-spacing: 5px;
+		font-size: 13px;
+		outline: none;
+		cursor: pointer;
+
+}
+.order_catalog:hover{
+	color: white;
+	background-color: black;
+	transition: 0.7s;
+}
+.order_active{
+	color: black;
+	background-color: white;
+	transition: 0.7s;
+}
