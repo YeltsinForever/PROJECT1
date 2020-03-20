@@ -1,50 +1,87 @@
-const CATALOG=[
+const CATALOG = [
   {
     id: 'el1',
     name: 'Dsquared2 Wood Pour Homme (edt)',
     size:'100ml',
     img: src ="img/1.jpg",
+    price: 4700,
   },
   {
     id: 'el2',
     name: 'Guerlain L Homme Ideal (edp)',
     size:'100ml',
     img: src ="img/2.jpg",
+    price: 6800,
   },
 {
   id: 'el3',
   name: 'Tom Ford Oud Wood(edp)',
   size:'50ml',
   img: src ="img/3.jpg",
+  price: 12000,
 },
 {
   id: 'el4',
   name: 'Guerlain L Homme Ideal(edt)',
   size:'100ml',
   img: src ="img/4.jpg",
+  price: 4000,
 },
 {
   id: 'el5',
   name: 'Chanel №5 (edt)',
   size:'100ml',
   img: src ="img/5.jpg",
+  price: 4300,
 },
 {
   id: 'el6',
   name: 'Chanel Égoïste (edt)',
   size:'60ml',
   img: src ="img/6.jpg",
+  price: 3800,
 },
 {
   id: 'el7',
   name: 'Mugler A Men Ultimate(edt)',
   size:'100ml',
   img: src ="img/7.jpg",
+  price: 4500,
 },
 {
   id: 'el8',
   name: 'Versace Pour Homme Dylan Blue Versace(edt)',
   size:'100ml',
   img: src ="img/8.jpg",
+  price: 6500,
 },
+{
+  id: 'el9',
+  name: 'Jose Eisenberg Love Affair Homme(edt)',
+  size:'100ml',
+  img: src ="img/9.jpg",
+  price: 3600,
+},
+{
+  id: 'el10',
+  name: 'Jose Eisenberg Le Peche Homme(edt)',
+  size:'30ml',
+  img: src ="img/10.jpg",
+  price: 4900,
+},
+{
+  id: 'el11',
+  name: 'Chanel Les Exclusifs de Chanel 1932 (edp)',
+  size:'75ml',
+  img: src ="img/11.jpg",
+  price: 18500,
+},
+{
+  id: 'el12',
+  name: 'Givenchy L Interdit (edp)',
+  size:'50ml',
+  price: 3700,
+  img: src ="img/12.jpg",
+},
+
 ];

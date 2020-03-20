@@ -1,0 +1,28 @@
+.headerContainer{
+  display: flex;
+  height: 100px;
+  padding: 30px;
+  background-color: black;
+  color: white;
+  font-family: main;
+}
+.headerCounter{
+  margin-left: auto;
+  padding-right: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.header_cart{
+  width: 50px;
+  height: 45px;
+}
+.header_count{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid red;
+  background-color: red;
+  text-align:center;
+}

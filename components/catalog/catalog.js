@@ -1,12 +1,13 @@
 class Products {
   constructor(){
 
-    this.classNameActive = 'order_active';
-    this.label = 'Add';
-    this.labelRemove = 'remove';
+    this.classNameActive = '.order_active';
+    this.labelAdd = 'BUY';
+    this.labelRemove = 'REMOVE';
 
 }
  handleSetLocationStorage(element, id){
+
       const {pushProduct, products} =  localStorageUtil.putProgucts(id);
       if (pushProduct) {
         element.classList.add(this.classNameActive);
@@ -15,27 +16,29 @@ class Products {
         element.classList.remove(this.classNameActive);
         element.innerHTML = this.labelAdd;
       }
-
+        headerPage.render(products.length);
        }
   render() {
     const productStore = localStorageUtil.getProgucts();
-      let htmlCatalog = ' ';
+      let htmlCatalog = '';
 
-    CATALOG.forEach(({ img, name, size, id }) => {
+    CATALOG.forEach(({ img, name, size, price, id}) => {
       let activeClass = '';
       let activeTxt = '';
-      if (productStore.indexOf(id)== -1){
-        activeTxt = 'Add';
+      if (productStore.indexOf(id) === -1){
+        activeTxt = 'BUY';
       }
       else {
         activeClass =' order_active';
-        activeTxt= 'remove';
+        activeTxt= 'REMOVE';
       }
       htmlCatalog += `
       <li class="item_catalog">
       <img class="img_catalog" src="${img}"></br>
-    <span> ${name} </span></br>
+    <span>${name} </span></br>
      <span>${size} </span></br>
+     <span>${price.toLocaleString()} RUB</span></br>
+
     <button class="order_catalog ${activeClass}" onclick="productsPage.handleSetLocationStorage(this, '${id}')">  ${activeTxt} </button>
       </li>
       `;
